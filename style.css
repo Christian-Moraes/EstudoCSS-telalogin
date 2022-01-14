@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+body {
+  height: 100vh;
+}
+
+/*Centralizar uma div filho dentro de uma div pai*/
+
+.cabeçalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Centralizar uma div filho dentro de uma div pai*/
+
+.div1 {
+  display: flex;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 78, 94, 1) 100%
+  );
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+h1,
+p {
+  color: aliceblue;
+}
+
+.item1 {
+  border-radius: 1e;
+  background: transparent;
+  width: 500px;
+  height: 500px;
+}
+
+input {
+  font-size: 1em;
+}
+
+.inputlogin input {
+  background: rgb(126, 13, 255);
+  width: 100%;
+  height: 50px;
+}
+
+.senhalogin input {
+  background: rgb(126, 13, 255);
+  width: 100%;
+  height: 50px;
+}
+
+.botao {
+  font-size: 0.9em;
+  display: flex;
+  width: 100px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.botaologin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+fa-brands fa-google {
+  font-size: 12px;
+}
