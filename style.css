@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif !important;
 }
 
 body {
   height: 100vh;
+}
+
+h1,
+p {
+  color: aliceblue;
 }
 
 /*Centralizar uma div filho dentro de uma div pai*/
@@ -17,7 +21,7 @@ body {
   align-items: center;
 }
 
-/*Centralizar uma div filho dentro de uma div pai*/
+/*container-login*/
 
 .div1 {
   display: flex;
@@ -35,49 +39,106 @@ body {
   font-size: 1.2em;
 }
 
-h1,
-p {
-  color: aliceblue;
-}
-
 .item1 {
-  border-radius: 1e;
+  background-color: white;
+  border-radius: 1em;
   background: transparent;
   width: 500px;
   height: 500px;
+  backdrop-filter: blur(30px);
 }
+
+/*locais de inserir dados*/
 
 input {
   font-size: 1em;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: white;
 }
 
 .inputlogin input {
   background: rgb(126, 13, 255);
   width: 100%;
   height: 50px;
+  margin-bottom: 25px;
+  border-radius: 0.3em;
+}
+
+.senhalogin {
+  position: relative;
+  text-align: end;
 }
 
 .senhalogin input {
   background: rgb(126, 13, 255);
   width: 100%;
   height: 50px;
+  margin-bottom: 25px;
+  border-radius: 0.3em;
 }
 
+/*botao login*/
+
 .botao {
-  font-size: 0.9em;
+  color: white;
+  font-size: 1.4em;
   display: flex;
-  width: 100px;
-  height: 35px;
+  width: 180px;
+  height: 50px;
   justify-content: center;
   align-items: center;
+  border-radius: 2rem;
+  background: rgb(255, 68, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 68, 0, 1) 0%,
+    rgba(255, 113, 57, 1) 50%,
+    rgba(255, 154, 0, 1) 100%
+  );
 }
 
 .botaologin {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 25px;
 }
 
-fa-brands fa-google {
-  font-size: 12px;
+.Esqueci-a-senha {
+  margin-top: 45px;
+  margin-left: 15px;
+}
+
+/*icons*/
+
+.icons1 {
+  display: grid;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.fa-facebook,
+.fa-google {
+  cursor: pointer;
+  color: white;
+  font-size: 40px;
+}
+
+.iconeye {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  top: -58px;
+  right: 13px;
+}
+
+.fa-eye,
+.fa-eye-slash {
+  cursor: pointer;
+  color: #ffffff !important;
 }

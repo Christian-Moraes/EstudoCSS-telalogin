@@ -7,23 +7,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
   </head>
   <body>
     <div class="div1">
       <div class="item1">
         <div><h1 class="cabeçalho">Login</h1></div>
-        <div><i class="fab fa-facebook">Facebook</i></div>
-        <div><i class="fab fa-google">Google</i></div>
+        <div class="icons1">
+          <div>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+          </div>
+        </div>
         <div class="inputlogin">
-          <input type="text" name="Login" id="login" />
-          <p>Login</p>
+          <input type="email" name="Login" id="login" placeholder="E-mail" />
         </div>
         <div class="senhalogin">
-          <input type="text" name="Senha" id="senha" />
-          <p>Senha</p>
+          <input type="password" name="Senha" id="senha" placeholder="Senha" />
+          <div class="iconeye"><i class="fas fa-eye-slash"></i></div>
         </div>
         <div class="botaologin">
           <button class="botao">Iniciar</button>
@@ -33,5 +36,8 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css "></script>
+    <script src="script.js"></script>
   </body>
 </html>
